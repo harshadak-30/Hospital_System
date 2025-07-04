@@ -30,7 +30,7 @@ A modern, responsive hospital management website built with HTML, CSS, and JavaS
 
 1. Clone the repository:
    ```bash
-   git clone [your-repo-link-here]
+   git clone [https://github.com/harshadak-30/Hospital_System]
    ```
 2. Navigate to the project directory:
    ```bash
