@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospione Website</title>
+  <link rel="stylesheet" href="hospione.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="top-bar">
+    <div class="left hideOnMobile">
+      <i class="fas fa-language"></i> Language
+    </div>
+    <div class="center">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="right">
+      <input type="text" placeholder="Search..." />
+      <i class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="logo">hospione</div>
+    <div class="menu">
+      <a class="hideOnMobile" href="#">Home</a>
+      <a class="hideOnMobile" href="#">About</a>
+      <a class="hideOnMobile" href="#">Surgeries</a>
+      <a class="hideOnMobile" href="#">Media</a>
+      <a class="hideOnMobile" href="#">Blog</a>
+      <a class="hideOnMobile" href="#">Contact</a>
+      <div class="sidebar-active">
+        <a href="#"><i onclick="hideSidebar()" class="fa-solid fa-xmark"></i></a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Surgeries</a>
+        <a href="#">Media</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <div class="activeAction">
+        <button class="active-btn-appointment"><i class="fas fa-calendar-alt"></i><br>Appointment</button>
+        <button class="active-btn-location"><i class="fas fa-map-marker-alt"></i><br>Location</button>
+        </div>
+        <div class="parent-active-btn-login">
+          <button class="active-btn-login"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</button>        </div>
+      </div>
+    </div>
+    <div class="actions hideOnMobile">
+      <div class="phone">
+        <i class="fas fa-phone-alt"></i> Toll Free No<br />1800 666 888
+      </div>
+      <button class="btn-appointment"><i class="fas fa-calendar-alt"></i> Appointment</button>
+      <button class="btn-location"><i class="fas fa-map-marker-alt"></i> Location</button>
+      <button class="btn-login"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</button>
+    </div>
+    <i onclick="showSidebar()" class="fa-solid fa-bars " id="menu-btn"></i>
+  </nav>
+  
+  <main>
+    <section class="specialtiesvv">
+      <div class="specialty">
+        <img src="images/orthopedics.png" alt="cardiology">
+        <p>Orthopedics</p>
+      </div>
+      <div class="specialty">
+        <img src="images/cardiology.png" alt="cardiology">
+        <p>Cardiology</p>
+      </div>
+      <div class="specialty">
+        <img src="images/laparoscopy.png" alt="cardiology">
+        <p>Laparoscopy</p>
+      </div>
+      <div class="specialty">
+        <img src="images/proctology.png" alt="cardiology">
+        <p>Proctology</p>
+      </div>
+      <div class="specialty">
+        <img src="images/urology.png" alt="cardiology">
+        <p>Urology</p>
+      </div>
+      <div class="specialty">
+        <img src="images/gastroenterology.png" alt="cardiology">
+        <p>Gastroenterology</p>
+      </div>
+      <div class="specialty">
+        <img src="images/oncology.png" alt="cardiology">
+        <p>Oncology</p>
+      </div>
+      <div class="specialty">
+        <img src="images/cosmetic.png" alt="cardiology">
+        <p>Cosmetic</p>
+      </div>
+      <div class="specialty">
+        <img src="images/infertility.png" alt="cardiology">
+        <p>Infertility</p>
+      </div>
+      <div class="specialty">
+        <img src="images/gynecolpgy.png" alt="cardiology">
+        <p>Gynecolpgy</p>
+      </div>
+      <div class="specialty">
+        <img src="images/vascular.png" alt="cardiology">
+        <p>Vascular</p>
+      </div>
+      <div class="specialty">
+        <img src="images/arrow.png" alt="">
+        <p>View All</p>
+      </div>
+    </section>
+
+    <section class="topDr">
+      <div class="details">
+        <p>Consult Top Docters Online</p>
+        <h2>Find Specialized Dpcters & Get Quality Treatments</h2>
+        <div class="topicon">
+          <div class="icon">
+            <img src="images/healthcare.png" alt="">
+            <p>Quality Care</p>
+          </div>
+          <div class="icon">
+            <img src="images/rupees.png" alt="">
+            <p>Affordable</p>
+          </div>
+          <div class="icon">
+            <img src="images/surgeon.png" alt="">
+            <p>Surgeries</p>
+          </div>
+          <div class="icon">
+            <img src="images/technique.png" alt="">
+            <p>Modern Techniques</p>
+          </div>
+        </div>
+        <p>Usually We try to do as much as possible so that our patients does not have any difficult and provides
+          prompt treatment.</p>
+        <div class="topbutton">
+          <button><i class="fas fa-phone-alt"></i> 1800 666 888</button>
+          <button id="apointmentbutton"><i class="fas fa-calendar-alt"></i> Book Free Consultation</button>
+        </div>
+      </div>
+      <div class="drimages">
+        <img src="images/dr.png" alt="top dr">
+      </div>
+    </section>
+
+    <section class="our_s">
+      <div class="our_Specialities">
+        <div>
+          <h2>Our Specialities</h2>
+        </div>
+
+        <div class="Specialitiess">
+          <div class="Spe_img">
+            <img src="images/hair-transplant.png" alt="">
+            <p>Hair Transparent</p>
+          </div>
+          <div class="Spe_img">
+            <img src="images/spine.png" alt="">
+            <p>spine</p>
+          </div>
+          <div class="Spe_img">
+            <img src="images/bypass.png" alt="">
+            <p>bypass</p>
+          </div>
+          <div class="Spe_img">
+            <img src="images/hip-replacement.png" alt="">
+            <p>hip replacement</p>
+          </div>
+          <div class="Spe_img">
+            <img src="images/kidney.png" alt="">
+            <p>kidney stones</p>
+          </div>
+          <div class="Spe_img">
+            <img src="images/knee rep.png" alt="">
+            <p>knee replacement</p>
+          </div>
+        </div>
+        <div>
+          <button id="btn">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="processs">
+      <div class="hospione_works">
+        <p>How Hospione Works</p>
+        <h3>A Simplified Procedure To <br> Cure Your Health</h3>
+      </div>
+      <div class="process">
+        <div class="processimg">
+          <img src="images/regestration.png" alt="">
+          <p>Registration</p>
+        </div>
+        <div class="processimg">
+          <img src="images/talk specialist.png" alt="">
+          <p>Tolk to Specialist</p>
+        </div>
+        <div class="processimg">
+          <img src="images/apointment.png" alt="">
+          <p>Book Appointment</p>
+        </div>
+        <div class="processimg">
+          <img src="images/choose doctor.png" alt="">
+          <p>Choose a doctor</p>
+        </div>
+      </div>
+      <div class="contact_as">
+        <p>if you have difficulty inderstanding our work <br> process please <a href="#">Contact Us</a> for better
+          information</p>
+      </div>
+    </section>
+
+    <section class="Talk">
+      <div class="aarogya">
+        <div class="aaro_img">
+          <img src="images/aarogya-sathi.png" height="80px" width="80px" alt="vv">
+        </div>
+        <div class="talk_with">
+          <p id="talk">Let's Talk With Your</p>
+          <h2>AAROGYA SATHI</h2>
+          <p id="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, corporis. Atque excepturi eaque
+            odio
+            corrupti consequatur dicta natus repellendus possimus sed. Amet veritatis animi nostrum facere harum
+            deserunt dolor minima.</p>
+          <div class="sbtn">
+            <button class="saathi_btn"><i class="fas fa-phone-alt"></i> 1800 666 888</button>
+            <button id="saathi_btn"><i class="fas fa-calendar-alt"></i> Book free Consultation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment-section">
+      <h2>Let's Schedule Your Appointment</h2>
+      <form class="appointment-form">
+        <div class="input-row">
+          <input type="text" placeholder="Enter Full Name" required />
+          <input type="text" placeholder="Enter Mobile Number" required />
+        </div>
+        <div class="input-row">
+          <select required>
+            <option value="">Select City</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Nashik</option>
+          </select>
+          <select required>
+            <option value="">Select Disease</option>
+            <option>Cold</option>
+            <option>Fever</option>
+            <option>Diabetes</option>
+          </select>
+          <select required>
+            <option value="">Select Sub-Disease</option>
+            <option>Type 1</option>
+            <option>Type 2</option>
+          </select>
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <section class="consultation-section">
+      <h4 class="subtitle">Why HospiOne</h4>
+      <h2 class="main-title">We Provide Best Online <br>Doctor Consultation For You</h2>
+
+      <div class="consultation-container">
+        <div class="circle-image-center">
+          <img src="images/main img.png" alt="Main Doctors" />
+          <div class="center-text">
+            <h3>Consult with Expeart</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+        </div>
+
+        <div class="circle-item top-left">
+          <img src="images/dr-surgeon1.png" alt="Doctor" />
+          <h4>All Types Doctors & Surgeons</h4>
+          <p>Lorem ipsum dolor sit amet cons adipiscing elit sed doesmo</p>
+        </div>
+
+        <div class="circle-item top-right">
+          <img src="images/dr-surgeon2.jpg" alt="Surgery" />
+          <h4>Overall Assistance Throughout Surgery</h4>
+          <p>Lorem ipsum dolor sit amet cons adipiscing elit sed doesmo</p>
+        </div>
+
+        <div class="circle-item bottom-left">
+          <img src="images/dr-surgeon2.png" alt="Treatments" />
+          <h4>Overall 50+ Treatments</h4>
+          <p>Lorem ipsum dolor sit amet cons adipiscing elit sed doesmo</p>
+        </div>
+
+        <div class="circle-item bottom-right">
+          <img src="images/dr-surgeon3.png" alt="Care" />
+          <h4>Post Care Surgery Service</h4>
+          <p>Lorem ipsum dolor sit amet cons adipiscing elit sed doesmo</p>
+        </div>
+      </div>
+
+      <a href="#" class="consult-button">Get Free Consultation</a>
+    </section>
+
+
+    <section class="app-download-section">
+      <div class="container">
+        <div class="app-image">
+          <img src="images/appimg.png" alt="Mobile App Interface" />
+        </div>
+        <div class="app-text">
+          <h4>Download Our App</h4>
+          <h2>Download HospiOne App <br> From Your Mobile</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+
+          <div class="features">
+            <div class="feature-item">
+              <img src="images/video_consult.png" alt="Video" />
+              <span>Video Consult With Doctors</span>
+            </div>
+            <div class="feature-item">
+              <img src="images/question.png" alt="Ask" />
+              <span>Ask Free Questions</span>
+            </div>
+            <div class="feature-item">
+              <img src="images/health-care.png" alt="Healthcare" />
+              <span>Exclusive Healthcare</span>
+            </div>
+            <div class="feature-item">
+              <img src="images/create_account.png" alt="Account" />
+              <span>Create an account and make easy treatment</span>
+            </div>
+          </div>
+          <div class="download-buttons">
+            <a href=""><img src="images/icons8-app-store-50.png" alt="App Store" />App Store</a>
+            <a href=""><img src="images/icons8-play-store-48.png" alt="App Store" />Play Store</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation-banner">
+      <div class="consultation-content">
+        <h2>Get An Free Online Consultation <br> Over 50+ Surgeries</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aquis nostrud</p>
+      </div>
+      <a href="#" class="book-button">Book Your Appointment</a>
+    </section>
+
+    <section class="blog-section">
+      <div class="blog-header">
+        <p class="subheading">Our Blogs</p>
+        <h2 class="main-heading">Read Our Latest Articles</h2>
+      </div>
+
+      <div class="blog-container">
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+          <img src="images/checkup img (1).png" alt="Blog Image" />
+          <div class="blog-meta">
+            <span><img src="images/admin.png" alt="User" /> Admin</span>
+            <span><img src="images/calender.png" alt="Date" /> 19 Sept 2021</span>
+          </div>
+          <h4>Pioneering Discoveries In Inflammatory Bowel Disease</h4>
+          <p>Lorem ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+          <a href="#">Read More</a>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <img src="images/checkup img (1).png" alt="Blog Image" />
+          <div class="blog-meta">
+            <span><img src="images/admin.png" alt="User" /> Admin</span>
+            <span><img src="images/calender.png" alt="Date" /> 19 Sept 2021</span>
+          </div>
+          <h4>Pioneering Discoveries In Inflammatory Bowel Disease</h4>
+          <p>Lorem ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+          <a href="#">Read More</a>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+          <img src="images/checkup img (1).png" alt="Blog Image" />
+          <div class="blog-meta">
+            <span><img src="images/admin.png" alt="User" /> Admin</span>
+            <span><img src="images/calender.png" alt="Date" /> 19 Sept 2021</span>
+          </div>
+          <h4>Pioneering Discoveries In Inflammatory Bowel Disease</h4>
+          <p>Lorem ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="view-more">
+        <a href="#">View More</a>
+      </div>
+    </section>
+
+    <section class="join-section">
+      <div class="join-content">
+        <h2>ARE YOU <span class="highlight">A SURGEON</span> ?</h2>
+        <h3>Join Our Team</h3>
+        <p>
+          Luis ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+          Luis ipsum suspendisse ultrices. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        </p>
+        <div class="join-buttons">
+          <a href="#" class="call-btn">
+            <img src="images/call.png" alt="Call Icon" /> 1800 666 888
+          </a>
+          <a href="#" class="connect-btn">Connect Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <p class="section-subtitle">Our Events</p>
+      <h2 class="section-title">Read Our Latest Events</h2>
+
+      <div class="events-grid">
+        <!-- Card 1 -->
+        <div class="event-card">
+          <div class="event-img">
+            <img src="images/yoga-img.png" alt="Event Image">
+            <div class="event-date">
+              <span class="date">10</span>
+              <span class="month">JAN</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <p>Pioneering Discoveries In Inflammatory Bowel Disease</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="event-card">
+          <div class="event-img">
+            <img src="images/yoga-img.png" alt="Event Image">
+            <div class="event-date">
+              <span class="date">10</span>
+              <span class="month">JAN</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <p>Pioneering Discoveries In Inflammatory Bowel Disease</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="event-card">
+          <div class="event-img">
+            <img src="images/yoga-img.png" alt="Event Image">
+            <div class="event-date">
+              <span class="date">10</span>
+              <span class="month">JAN</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <p>Pioneering Discoveries In Inflammatory Bowel Disease</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="event-card">
+          <div class="event-img">
+            <img src="images/yoga-img.png" alt="Event Image">
+            <div class="event-date">
+              <span class="date">10</span>
+              <span class="month">JAN</span>
+            </div>
+          </div>
+          <div class="event-content">
+            <p>Pioneering Discoveries In Inflammatory Bowel Disease</p>
+          </div>
+        </div>
+      </div>
+      <div class="view-more">
+        <a href="#">View More</a>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <p class="section-subtitle">Our Testimonials</p>
+      <h2 class="section-title">What Our Patient Says</h2>
+
+      <div class="testimonial-content">
+        <!-- <img src="images/icons8-good-30.png" alt="Quote" class="quote-icon left-quote"> -->
+        <p class="testimonial-text">
+          Since vindictively over agile the some far well besides constructively well airy then one during with close
+          excellent grabbed gosh contrary far dalmatian upheld intrepid bought and toucan majestic more some apart dear
+          boa much cast falcon a dwelled ouch busy.
+        </p>
+        <!-- <img src="images/icons8-good-30.png" alt="Quote" class="quote-icon right-quote"> -->
+        <h4 class="testimonial-name">Mr. Dipti Deshmukh</h4>
+        <p class="testimonial-role">CEO</p>
+        <a href="#" class="view-all-btn">View All</a>
+      </div>
+    </section>
+
+
+    <section class="about-section">
+      <h2 class="about-title">What is HospiOne <span>?</span></h2>
+
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/dr-surgeon2.png" alt="Doctor Image">
+        </div>
+
+        <div class="about-text">
+          <p><strong>HospiOne</strong> is a chain of hospitals, clinics and doctors, with strategic tie-ups, delivering
+            the best medical services to the patients.</p>
+          <p>The seeds were sown one and half years ago during the first wave of covid. The core Team of HospiOne
+            managed majority of admissions, OPD consultations and counselling sessions which gave desired outcomes to
+            our patients... Hospital will provide home services to senior citizens and bedridden patients in terms of
+            nursing staff, physiotherapy and bedside medical care . .</p>
+          <p>HospiOne is a chain of hospitals, clinics and doctors, with strategic tie-ups, delivering the best medical
+            services to the patients. The seeds were sown one and half years ago during the first wave of covid. The
+            core Team of HospiOne managed majority of admissions, OPD consultations and counselling sessions which gave
+            desired outcomes to our patients. The positive feedback from patients encouraged us to expand the services
+            in Healthcare to further level. Highly experienced and qualified doctors enrolled into HospiOne will provide
+            their services for pre operative check ups, pre operative fitness, as well as post operative care at their
+            native places ensuring that the operating surgeon stays in touch throughout the process. Patients can avail
+            diagnostic services , pathology and radiology services at affordable charges through HospiOne. Hospital will
+            provide home services to senior citizens and bedridden patients in terms of nursing staff, physiotherapy and
+            bedside medical care . .</p>
+
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialties">
+      <div class="row">
+        <strong>Gynaecology</strong>
+        <p>Gynaecologist In Bangalore | Gynaecologist In Chandigarh | Gynaecologist In Chennai | Gynaecologist In Delhi
+          | Gynaecologist In Gurgaon | Gynaecologist In Lucknow | Gynaecologist In Mumbai | Gynaecologist In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Aesthetic</strong>
+        <p>Plastic surgeon In Ahmedabad | Plastic surgeon In Bangalore | Plastic surgeon In Chandigarh | Plastic surgeon
+          In Chennai | Plastic surgeon In Delhi | Plastic surgeon In Gurgaon | Plastic surgeon In Kolkata | Plastic
+          surgeon In Lucknow | Plastic surgeon In Mumbai | Plastic surgeon In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Laparoscopy</strong>
+        <p>Laparoscopic Surgeon In Ahmedabad | Laparoscopic Surgeon In Bangalore | Laparoscopic Surgeon In Chandigarh |
+          Laparoscopic Surgeon In Chennai | Laparoscopic Surgeon In Delhi | Laparoscopic Surgeon In Gurgaon |
+          Laparoscopic Surgeon In Kolkata | Laparoscopic Surgeon In Lucknow | Laparoscopic Surgeon In Mumbai |
+          Laparoscopic Surgeon In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Vascular</strong>
+        <p>Vascular surgeon In Ahmedabad | Vascular surgeon In Bangalore | Vascular surgeon In Chandigarh | Vascular
+          surgeon In Chennai | Vascular surgeon In Delhi | Vascular surgeon In Gurgaon | Vascular surgeon In Kolkata |
+          Vascular surgeon In Lucknow | Vascular surgeon In Mumbai | Vascular surgeon In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>ENT</strong>
+        <p>ENT specialist In Bangalore | ENT specialist In Chandigarh | ENT specialist In Chennai | ENT specialist In
+          Delhi | ENT specialist In Gurgaon | ENT specialist In Lucknow | ENT specialist In Mumbai | ENT specialist In
+          Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Proctology</strong>
+        <p>Proctologist In Ahmedabad | Proctologist In Bangalore | Proctologist In Chandigarh | Proctologist In Chennai
+          | Proctologist In Delhi | Proctologist In Gurgaon | Proctologist In Kolkata | Proctologist In Lucknow |
+          Proctologist In Mumbai | Proctologist In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Urology</strong>
+        <p>Urologist In Bangalore | Urologist In Chandigarh | Urologist In Chennai | Urologist In Delhi | Urologist In
+          Gurgaon | Urologist In Kolkata | Urologist In Lucknow | Urologist In Mumbai | Urologist In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Orthopedics</strong>
+        <p>Orthopedic surgeon In Bangalore | Orthopedic surgeon In Delhi | Orthopedic surgeon In Gurgaon | Orthopedic
+          surgeon In Mumbai | Orthopedic surgeon In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Fertility</strong>
+        <p>Orthopedic surgeon In Bangalore | Orthopedic surgeon In Delhi | Orthopedic surgeon In Gurgaon | Orthopedic
+          surgeon In Mumbai | Orthopedic surgeon In Pune</p>
+      </div>
+
+      <div class="row">
+        <strong>Ophthalmology</strong>
+        <p>Eye specialist In Ahmedabad | Eye specialist In Bangalore | Eye specialist In Chennai | Eye specialist In
+          Delhi | Eye specialist In Gurgaon | Eye specialist In Lucknow | Eye specialist In Mumbai</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & Info -->
+      <div class="footer-section about">
+        <h2 class="logo">hosp<span>i</span>one</h2>
+        <p>Lorem ipsum dolor, sit amet earum consectetur adipisicing elit. Cupiditate rerum quidem fugiat sapiente!
+          Iusto quae perspiciatis,</p>
+        <p><i class="fas fa-phone-alt"></i> 1800 222 666</p>
+        <p><i class="fas fa-envelope"></i> info@hospione.com</p>
+      </div>
+
+      <!-- Information -->
+      <div class="footer-section">
+        <h3>INFORMATION</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+
+      <!-- Patient Care -->
+      <div class="footer-section">
+        <h3>PATIENT CARE</h3>
+        <ul>
+          <li><a href="#">Find a Doctor</a></li>
+          <li><a href="#">Book Physical Appointment</a></li>
+          <li><a href="#">Patient Testimonials</a></li>
+          <li><a href="#">FAQ's</a></li>
+        </ul>
+      </div>
+
+      <!-- Centers of Excellence -->
+      <div class="footer-section">
+        <h3>CENTERS OF EXCELLENCE</h3>
+        <ul>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Laparoscopy</a></li>
+          <li><a href="#">Proctology</a></li>
+          <li><a href="#">Urology</a></li>
+          <li><a href="#">Gastroenterology</a></li>
+          <li><a href="#">Cosmetic / Aesthetic</a></li>
+          <li><a href="#">Infertility</a></li>
+          <li><a href="#">Gynecology</a></li>
+          <li><a href="#">Vascular</a></li>
+          <li><a href="#">ENT</a></li>
+          <li><a href="#">Opthal</a></li>
+          <li><a href="#">Neurosurgery / Neurology</a></li>
+          <li><a href="#">Bariatric Surgery</a></li>
+          <li><a href="#">Homecare</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-section">
+        <h3>CONTACT US</h3>
+        <ul>
+          <li><a href="#">Ask a Query</a></li>
+          <li><a href="#">Give Your Feedback</a></li>
+          <li><a href="#">Hospi One Lifeline</a></li>
+          <li><a href="#">Become a arogayasathi</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>Copyrights (c) 2022. HospiOne. All rights reserved. Design by <a href="#">Digital Marketing StudioGenix</a></p>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <div class="scroll-up">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
